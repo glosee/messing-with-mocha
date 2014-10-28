@@ -21,4 +21,10 @@ See [here](http://code.tutsplus.com/tutorials/better-coffeescript-testing-with-m
 #### With an HTML report
 `mocha --compilers coffee:coffee-script/register -R html-cov test/spec_init.coffee test > coverage/coverage.html`
 
+## Ideas
+
+### Because the hub is not using the CommonJS pattern
+- Maybe we can manipulate each file to add `module.exports = className` somehow?
+- Maybe we can add NA to `root.window` inside `spec_init.coffee` and see if `coffee-coverage` still runs?
+
 
