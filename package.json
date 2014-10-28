@@ -1,0 +1,27 @@
+{
+  "name": "tutsplus-mocha",
+  "version": "1.0.0",
+  "description": "See [http://code.tutsplus.com/tutorials/better-coffeescript-testing-with-mocha--net-24696](http://code.tutsplus.com/tutorials/better-coffeescript-testing-with-mocha--net-24696) for more info",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^1.9.2",
+    "coffee-script": "^1.8.0",
+    "mocha": "^2.0.1"
+  },
+  "devDependencies": {
+    "coffee-coverage": "^0.4.2",
+    "gulp": "^3.8.9",
+    "gulp-mocha": "^1.1.1",
+    "jsdom": "^1.0.3",
+    "sinon": "^1.11.1",
+    "sinon-chai": "^2.6.0"
+  }
+}
