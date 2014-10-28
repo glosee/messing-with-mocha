@@ -1,12 +1,12 @@
 # This is me trying to understand mocha and make it obey me
 
 ## This Will include
-+ Setting up `mocha` (:YES)
-+ Using `chai` and `should` (:YES)
-+ Adding a DOM to test client-side code with `jsdom` (:YES)
-+ The ability to test jQuery code and general DOM manipulation (:YES)
++ Setting up `mocha` (:+1:)
++ Using `chai` and `should` (:+1:)
++ Adding a DOM to test client-side code with `jsdom` (:+1:)
++ The ability to test jQuery code and general DOM manipulation (:+1:)
 + Make jQuery load the same way its set up in the hub project
-+ Unit testing coffeescript files and generating coverage reports with `coffee-coverage` (:YES)
++ Unit testing coffeescript files and generating coverage reports with `coffee-coverage` (:+1:)
 + The ability to run everything with a simple `gulp` task
 
 See [here](http://code.tutsplus.com/tutorials/better-coffeescript-testing-with-mocha--net-24696) for the starting point.
