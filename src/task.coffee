@@ -24,6 +24,15 @@ class TaskList
       @tasks.push task
     @length = @tasks.length
 
+  addToDom: ->
+    taskListItems = []
+    taskListItems = @tasks.map (task, count) ->
+      return "<li><p>#{task.name}</p><span> - #{task.status}</span></li>"
+    $list = $('<ul></ul>')
+    for item in taskListItems
+      $list.append item
+    $('body').append $list
+
   remove: (task) ->
     i = @tasks.indexOf task
     @tasks = @tasks[0...i].concat @tasks[i+1..] if i > -1

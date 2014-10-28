@@ -20,6 +20,8 @@ root.window = document.parentWindow
 root.navigator = root.window.navigator
 root.window.XDomainRequest = undefined
 
+root.$ = root.jQuery = require 'jquery'
+
 beforeEach ->
   root.sandbox = sinon.sandbox.create()
 

@@ -89,7 +89,7 @@ describe 'TaskList instance', ->
 
     expect(taskList.print()).to.equal desiredOutput
 
-
-
-
-
+  it 'should add a list of tasks to the DOM', ->
+    taskList.addToDom()
+    expect($('ul').length).to.equal 1
+    expect($('li').length).to.equal taskList.length
