@@ -24,9 +24,9 @@
     "jquery": "^2.1.1",
     "jsdom": "^1.0.3",
     "mocha-cobertura-reporter": "^1.0.4",
-    "reporter-file": "0.0.1",
     "sinon": "^1.11.1",
     "sinon-chai": "^2.6.0",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "reporter-file": "git://github.com/glosee/reporter-file.git#feature-report-output"
   }
 }
