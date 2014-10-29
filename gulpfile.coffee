@@ -2,6 +2,7 @@ gulp = require 'gulp'
 mocha = require 'gulp-mocha'
 env = require 'gulp-env'
 cobertura = require 'mocha-cobertura-reporter'
+shell = require 'gulp-shell'
 
 gulp.task 'mocha', ['set-env-vars'], (done) ->
 
@@ -24,6 +25,10 @@ gulp.task 'set-env-vars', (done) ->
 
   done()
 
-gulp.task 'manual-mocha', ->
+gulp.task 'manual-mocha', ['set-env-vars'], (done) ->
 
+  gulp.src(['test/spec_init.coffee','test/**/*_spec.coffee'], {read: no})
+  .pipe(shell([
+    'mocha --compilers coffee:coffee-script/register --reporter mocha-cobertura-reporter > coverage/coverage.html'
+  ]))
 

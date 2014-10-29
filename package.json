@@ -21,12 +21,13 @@
     "gulp": "^3.8.9",
     "gulp-env": "^0.2.0",
     "gulp-mocha": "^1.1.1",
+    "gulp-shell": "^0.2.10",
     "jquery": "^2.1.1",
     "jsdom": "^1.0.3",
     "mocha-cobertura-reporter": "^1.0.4",
+    "reporter-file": "git://github.com/glosee/reporter-file.git#feature-report-output",
     "sinon": "^1.11.1",
     "sinon-chai": "^2.6.0",
-    "underscore": "^1.7.0",
-    "reporter-file": "git://github.com/glosee/reporter-file.git#feature-report-output"
+    "underscore": "^1.7.0"
   }
 }
