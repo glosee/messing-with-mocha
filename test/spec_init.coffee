@@ -14,12 +14,13 @@ root.chai.should()
 
 root.sandbox = null
 
-# Configure server-side code execution.
+# Create a DOM to test client side scripts
 root.document = jsdom.jsdom '<html><head></head><body></body></html>'
 root.window = document.parentWindow
 root.navigator = root.window.navigator
 root.window.XDomainRequest = undefined
 
+# TODO: Can we point this to vendor?
 root.$ = root.jQuery = require 'jquery'
 
 beforeEach ->

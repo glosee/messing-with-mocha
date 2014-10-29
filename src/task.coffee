@@ -47,6 +47,12 @@ class TaskList
       str += "\n"
     str
 
+  # Example method to show when code is not covered by unit tests
+  doStuff: ->
+    console.log 'doing some stuff'
+    div = $ '<div>'
+    $('body').append div
+
 # Export to either module.exports or `window` for DOM testing
 root = exports ? window
 root.Task = Task
